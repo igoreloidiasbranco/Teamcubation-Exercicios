@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        Imprimir imprime = new Imprimir();
+
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
         String resultado;
@@ -14,7 +16,7 @@ public class Main {
         double num = scanner.nextDouble();
 
         for (int i = 1; i <= num; i++) {
-            resultado = imprimir(i);
+            resultado = imprime.imprimir(i);
             if (resultado.equals("")) {
                 System.out.println(i);
             } else if (resultado.equals("Fizz")) {
@@ -26,17 +28,5 @@ public class Main {
         }
 
 
-    }
-
-    static public String imprimir(double num) {
-        if (num % 3 == 0 && num % 5 == 0) {
-            return "FizzBuzz";
-        } else if (num % 3 == 0) {
-            return "Fizz";
-        } else if (num % 5 == 0) {
-            return "Buzz";
-        } else {
-            return "";
-        }
     }
 }
