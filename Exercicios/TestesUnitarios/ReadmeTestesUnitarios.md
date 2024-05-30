@@ -1,6 +1,6 @@
 # Exercício Teste Unitário
 
-Escreva um código onde você vai receber um número n, e deve imprimir todos os números, partindo do 1 até n, com a seguinte condição:
+Escreva um código com testes unitários onde você vai receber um número n, e deve imprimir todos os números, partindo do 1 até n, com a seguinte condição:
 
 Se um número for divisível por 3, ao invés de imprimir o número, você deve imprimir Fizz.
 
